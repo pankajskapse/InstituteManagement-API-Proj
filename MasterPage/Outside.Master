@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Outside.master.cs" Inherits="InstituteManagement.MasterPage.Outside" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Institute Management</title>
+    <meta name="robots" content="noindex" />
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Styles/MainCss.css" rel="stylesheet" />
+    <%--<link href="../Styles/LoginPage.css" rel="stylesheet" />--%>
+    <link href="../Styles/all.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <%-- <nav>
+   <a href="#first"><i class="far fa-user"></i></a>
+   <a href="#second"><i class="fas fa-briefcase"></i></a>
+   <a href="#third"><i class="far fa-file"></i></a>
+   <a href="#fourth"><i class="far fa-address-card"></i></a>
+ </nav>--%>
+
+        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark pro-pic" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../Images/users/1.jpg" alt="user" class="rounded-circle" width="31" /></a>
+                                <div class="dropdown-menu dropdown-menu-right user-dd animated">
+                                    <a class="dropdown-item" href="#">
+                                    <asp:Label ID="welcome" runat="server" Text="Label">Welcome</asp:Label></a>
+                                    <a class="dropdown-item" href="../Pages/User_Information.aspx?Mode=Edit"><i class="ti-user m-r-5 m-l-5"></i>   My Profile</a>
+                                    <a class="dropdown-item" href="../Pages/Wallet.aspx"><i class="ti-wallet m-r-5 m-l-5"></i>   My Wallet</a>
+                                    <a class="dropdown-item" href="../Pages/AutoFillSponser.aspx"><i class="ti-wallet m-r-5 m-l-5"></i>   Auto Fill </a>
+                                    <a class="dropdown-item" href="../Pages/Change_Password.aspx"><i class="ti-email m-r-5 m-l-5"></i>   Change Password</a>
+                                    <a class="dropdown-item" href="../Pages/Login.aspx"><i class="fa fa-power-off m-r-5 m-l-5"></i>   Logout</a>
+                                </div>
+
+                            </li>
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

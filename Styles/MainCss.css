@@ -1,0 +1,279 @@
+﻿* {
+    margin: 0;
+}
+
+body, form {
+    padding: 0;
+    margin: 0;
+}
+
+.divBottomMargin {
+    margin-bottom: 3px;
+}
+.divTopMargin {
+    margin-top: 3% !important;
+}
+.wrapper {
+    min-height: 94%;
+    height: auto !important;
+    overflow: auto;
+    height: 94%;
+    margin: 0 auto -2em;
+    padding: 8px 8px 8px 8px;
+}
+
+
+.upper-header-section {
+    display: block;
+    padding: 0 15px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.upperhead_right {
+    display: block;
+    text-align: right;
+}
+
+    .upperhead_right span {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+        .upperhead_right span a {
+            text-decoration: none;
+        }
+
+            .upperhead_right span a:hover {
+                text-decoration: underline;
+            }
+
+.lower-header-section {
+    display: block;
+    background: #55a745;
+    margin-bottom: 5px;
+}
+
+.page_head {
+    display: block;
+    color: #d92c2c;
+    margin: 0;
+    padding: 0;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 12px;
+}
+
+.AMS-menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+    .AMS-menu li {
+        float: left;
+        list-style: none;
+    }
+
+        .AMS-menu li a {
+            display: block;
+            padding: 5px 15px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+            .AMS-menu li a:hover {
+                text-decoration: none;
+                background: #ff9a36;
+            }
+
+.footer {
+    display: block;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+    padding-top: 3px;
+    position: fixed;
+    width: 100%;
+}
+
+#tgl_menu {
+    display: none;
+    float: left;
+    width: 100%;
+    background: #fff;
+}
+
+.mob_logo {
+    display: none;
+}
+
+@media only screen and (max-width:767px) {
+    #tgl_menu {
+        display: block;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+        #tgl_menu img {
+            max-width: 30px;
+            float: right;
+        }
+
+    #AMS-menu {
+        display: none;
+    }
+
+    .AMS-menu {
+        float: none;
+        display: block;
+    }
+
+        .AMS-menu li {
+            float: none;
+            display: block;
+        }
+
+    .page_head {
+        font-size: 20px;
+    }
+
+    .footer {
+        height: auto !important;
+        padding-bottom: 20px;
+        position: fixed;
+    }
+
+    .Footer-text-Align {
+        text-align: left !important;
+    }
+
+    .mob_logo {
+        display: inline-block;
+        max-width: 200px;
+        float: left;
+    }
+
+    .nopad_xs {
+        padding: 0px;
+    }
+
+    .no_xs_disp {
+        display: none;
+    }
+}
+
+.divgapBetweenControlButton {
+    padding-bottom: 20px;
+}
+
+.divgapBetweenTwoControls {
+    padding-bottom: 5px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.container-fluid div {
+    font-size: 14px;
+}
+
+.CompusaryFieldStar {
+    color: red;
+    font-weight: bold;
+}
+
+/*----------------Tab control-------------*/
+#ParentDIV {
+    width: 50%;
+    height: 100%;
+    font-size: 12px;
+    font-family: Calibri;
+}
+/*--------------End tab control--------------------*/
+
+/*======================Hide gridview column=====================================*/
+.hiddencol {
+    display: none;
+}
+
+.maincontent {
+    margin: 0 310px 0 260px;
+}
+
+.clsBorder {
+    border: 0;
+    padding: 5px 12px;
+    font-weight: 600;
+}
+
+/*===========================================================*/
+
+/*------Gridview Styles-------------------*/
+.Grid {
+    background-color: #fff !important;
+    margin: 5px 0 10px 0 !important;
+    border: solid 1px #525252 !important;
+    border-collapse: collapse !important;
+    font-family: Calibri !important;
+    color: #474747 !important;
+}
+
+    .Grid td {
+        padding: 2px !important;
+        border: solid 1px #c1c1c1 !important;
+    }
+
+    .Grid th {
+        padding: 4px 2px;
+        color: #fff;
+        background: #363670 url(../Images/GridImages/grid-header.png) repeat-x top;
+        border-left: solid 1px #525252;
+        font-size: 0.9em;
+    }
+
+    .Grid .alt {
+        background: #fcfcfc url(../Images/GridImages/grid-alt.png) repeat-x top;
+    }
+
+    .Grid .pgr {
+        background: #363670 url(../Images/GridImages/grid-pgr.png) repeat-x top !important;
+    }
+
+        .Grid .pgr table {
+            margin: 3px 0;
+        }
+
+        .Grid .pgr td {
+            border-width: 0;
+            padding: 0 6px;
+            border-left: solid 1px #666;
+            font-weight: bold;
+            color: #fff;
+            line-height: 12px;
+        }
+
+        .Grid .pgr a {
+            color: Gray !important;
+            text-decoration: none !important;
+        }
+
+            .Grid .pgr a:hover {
+                color: #000;
+                text-decoration: none;
+            }
+/*==============End gridview styles====================*/
+
+.footer {
+    display: block;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+    padding-top: 3px;
+    position: fixed;
+    width: 100%;
+}
